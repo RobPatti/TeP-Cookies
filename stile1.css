@@ -1,0 +1,38 @@
+body {
+		font-family:verdana;
+		margin-left:10%;
+		margin-right:10%;
+	}
+div.header {
+			-webkit-border-radius: 30px 30px 30px 30px;
+			border-radius: 30px 30px 30px 30px;
+			border: 2px solid green;
+			text-align:center;
+			line-height:16px;
+			height:40px;
+			font-size:9px;
+		}
+div.colonna_sx {
+		margin-top:10px;
+		float:left;
+		width:60%;
+		margin-bottom:10px;
+	}
+div.colonna_dx {
+		margin-top:15px;
+		border: 2px dashed green;
+		float:right;
+		width:30%;
+		padding-left:15px;
+		padding-top:10px;
+	}
+div.footer {
+		border: 2px solid green;
+		text-align:center;
+		line-height:18px;
+		height:40px;
+		clear:both;
+		font-size:12px;
+	}
+	
+	
