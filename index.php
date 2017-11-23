@@ -1,13 +1,12 @@
+<?php
+	$val=1;
+	setcookie('Patti_Cookie', $val , time() + (86400 * 7), "/"); //setto nome_cookies a valore (val) e il tempo per il quale deve esistere il cookie
+?>
 <!DOCTYPE html>
 <head>
 	<title>Personal Website</title>
 	<link href="stile1.css" rel="stylesheet" type="text/css">
 </head>
-
-<?php
-	$val=0;
-	setcookie('Patti_Cookies', $val , time() + (86400 * 7), "/"); //setto nome_cookies a valore (val) e il tempo per il quale deve esistere il cookie
-?>
 
 <body>
 
@@ -45,18 +44,18 @@
 	
 	<div class="footer">
 	<?php
-		if(!isset($_COOKIE['Patti_Cookies'])) {
+		if(!isset($_COOKIE['Patti_Cookie'])) {
 		{
 			echo "Primo accesso dell'utente!";
 			$val++;
 		}
 		} else {
 			$val= ++ $_COOKIE['Patti_Cookie'];
-			setcookie('Patti_Cookie',$val);
+			setcookie('Patti_Cookie',$val,time() + (86400 * 7), "/");
 			echo "Cookie settato!<br>";
 			echo "Numero degli accessi: " .$_COOKIE['Patti_Cookie'];
 		}
 	?>
 	</div>
 	
-</body>
+</body>
